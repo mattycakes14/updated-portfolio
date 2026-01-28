@@ -1,0 +1,462 @@
+/* CSS Variables */
+:root {
+  /* Colors */
+  --color-primary: black;
+  --color-muted: #747272;
+  --color-bg: white;
+
+  /* Typography */
+  --font-primary: "Outfit", sans-serif;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+
+  /* Font Sizes */
+  --text-sm: 0.875rem;
+  --text-base: 0.9375rem;
+  --text-md: 1.0625rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5625rem;
+
+  /* Spacing */
+  --space-xs: 0.3125rem;
+  --space-sm: 0.5rem;
+  --space-md: 0.625rem;
+  --space-lg: 0.9375rem;
+  --space-xl: 1.25rem;
+  --space-2xl: 1.875rem;
+  --space-3xl: 2.5rem;
+  --space-4xl: 3.125rem;
+  --space-5xl: 5rem;
+}
+
+/* Page Load Animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Top Content Styles*/
+.mainContainer {
+  max-width: 700px;
+  width: 90%;
+  margin: 0 auto;
+  padding: 0 1rem;
+  min-height: 100vh;
+}
+
+.headShotImage {
+  animation: fadeInUp 0.6s ease forwards;
+  margin-top: var(--space-3xl);
+  margin-bottom: var(--space-xl);
+  width: 100px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 20px;
+  border: 2px solid white;
+  box-shadow: 0px 3px 12px 0px black;
+}
+
+.introHeader {
+  width: 75%;
+  animation: fadeInUp 0.6s ease 0.1s forwards;
+  opacity: 0;
+}
+.socialsContainer {
+  display: flex;
+  margin-top: var(--space-2xl);
+  animation: fadeInUp 0.6s ease 0.3s forwards;
+  opacity: 0;
+}
+
+.externalSourceImage {
+  width: 20px;
+  height: 20px;
+  margin-right: var(--space-lg);
+  transition: transform 0.3s ease;
+}
+
+.externalSourceImage:hover {
+  transform: translateY(-5px);
+}
+
+.subNav {
+  display: flex;
+  margin-top: var(--space-5xl);
+  animation: fadeInUp 0.6s ease 0.4s forwards;
+  opacity: 0;
+}
+
+.subNavTitles {
+  font-family: var(--font-primary);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--text-sm);
+  cursor: pointer;
+  width: 80px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+.subNavTitles:hover {
+  transform: translateY(-5px);
+}
+
+.subTabContainer {
+  margin-top: var(--space-4xl);
+  animation: fadeInUp 0.6s ease 0.5s forwards;
+  opacity: 0;
+}
+
+.activePill {
+  background-color: var(--color-primary);
+  color: var(--color-bg);
+  border-radius: 15px;
+}
+
+h1 {
+  font-family: var(--font-primary);
+  font-weight: var(--font-weight-bold);
+}
+
+.introDescription p {
+  width: 75%;
+  font-family: var(--font-primary);
+  color: var(--color-muted);
+  animation: fadeInUp 0.6s ease 0.2s forwards;
+  opacity: 0;
+}
+
+/* Project Tab Styles */
+.projectContainer {
+  animation: fadeInUp ease 0.3s forwards;
+}
+.projectSectionTab {
+  width: 100%;
+  min-height: 300px;
+  margin-bottom: var(--space-2xl);
+  border-radius: 10px;
+  box-shadow: 0px 2px 10px 0px black; /* offset-x offset-y blur spread color*/
+  display: flex;
+}
+
+.projectContentContainer {
+  margin: var(--space-2xl);
+  width: 100%;
+  max-width: 350px;
+}
+
+.projectName {
+  margin-top: var(--space-2xl);
+  font-family: var(--font-primary);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--text-xl);
+}
+
+.projectDesc {
+  margin-top: var(--space-2xl);
+  font-family: var(--font-primary);
+  font-weight: var(--font-weight-regular);
+  font-size: var(--text-base);
+  color: var(--color-muted);
+}
+
+.projectLink {
+  text-decoration: none;
+  color: inherit;
+}
+
+.visitLinkText {
+  margin-top: var(--space-2xl);
+  font-family: var(--font-primary);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--text-sm);
+  width: 65px;
+  height: 25px;
+  border: 2px solid var(--color-primary);
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.visitLinkText:hover {
+  transform: translateY(-5px);
+}
+.projectImageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: var(--space-2xl);
+}
+
+.projectImage {
+  width: 35px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  object-position: top;
+  box-shadow: 0px 1px 3px 0px black;
+}
+
+.projectVideoMedia {
+  max-width: 320px;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+}
+
+.projectPhotoMedia {
+  max-width: 250px;
+  width: 100%;
+  object-fit: contain;
+  border-radius: 10px;
+  box-shadow: 4px 6px 0px 0px rgba(0, 0, 0, 0.8),
+              8px 12px 0px 0px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.projectPhotoMedia:hover {
+  transform: translate(-2px, -3px);
+  box-shadow: 6px 9px 0px 0px rgba(0, 0, 0, 0.8),
+              12px 16px 0px 0px rgba(0, 0, 0, 0.4);
+}
+
+/* Skills Section Tab*/
+.skillsContainer {
+  animation: fadeInUp ease 0.3s forwards;
+}
+
+.skillCategory {
+  font-family: var(--font-primary);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--text-md);
+  margin-bottom: var(--space-sm);
+}
+
+.skillTag {
+  font-family: var(--font-primary);
+  font-weight: var(--font-weight-regular);
+  font-size: var(--text-base);
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.skillItems {
+  padding-left: var(--space-xs);
+}
+
+.skillItems span {
+  padding-right: var(--space-lg);
+}
+
+.skillRow {
+  margin-bottom: var(--space-2xl);
+}
+
+/* Education Section Styles */
+.educationContainer {
+  margin-top: var(--space-3xl);
+  animation: fadeInUp ease 0.3s forwards;
+}
+.educationSection {
+  margin-top: var(--space-3xl);
+  height: fit-content;
+  border-bottom: 1px solid var(--color-primary);
+}
+
+.educationSection div {
+  margin-bottom: var(--space-2xl);
+}
+.sectionTitle {
+  font-family: var(--font-primary);
+  font-size: var(--text-2xl);
+  font-weight: var(--font-weight-medium);
+}
+
+.universityDegree {
+  font-family: var(--font-primary);
+  font-size: var(--text-lg);
+}
+
+.universityDetails {
+  font-family: var(--font-primary);
+  font-size: var(--text-base);
+  font-weight: var(--font-weight-regular);
+  margin-top: var(--space-sm);
+  display: flex;
+  gap: var(--space-xl);
+}
+
+.courseworkItems {
+  margin-top: var(--space-md);
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+}
+
+.courseworkTag {
+  font-family: var(--font-primary);
+  font-size: var(--text-base);
+  font-weight: var(--font-weight-regular);
+}
+
+.activityRow {
+  font-family: var(--font-primary);
+  margin-top: var(--space-md);
+}
+
+.activityName {
+  font-size: var(--text-md);
+  font-weight: var(--font-weight-medium);
+}
+
+.activityDescription {
+  font-size: var(--text-base);
+  font-weight: var(--font-weight-regular);
+  margin-left: var(--space-md);
+}
+
+/* Connect Tab Styles*/
+.connectOuterContainer {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+  margin-top: var(--space-3xl);
+  animation: fadeInUp ease 0.3s forwards;
+}
+
+.connectContainer {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.connectContainer img {
+  width: 20px;
+  padding-right: var(--space-sm);
+}
+
+.connectName {
+  font-family: var(--font-primary);
+  font-size: var(--text-md);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-primary);
+}
+
+.connectIcon {
+  width: 90px;
+}
+
+/* ==========================================
+   MEDIA QUERIES - Mobile Responsiveness
+   ========================================== */
+
+/* Tablet and below (768px) */
+@media (max-width: 768px) {
+  .mainContainer {
+    width: 95%;
+    padding: 0 0.75rem;
+  }
+
+  .introHeader,
+  .introDescription p {
+    width: 100%;
+  }
+
+  .subNav {
+    flex-wrap: wrap;
+    gap: var(--space-sm);
+    margin-top: var(--space-3xl);
+  }
+
+  .projectSectionTab {
+    flex-direction: column;
+    min-height: auto;
+  }
+
+  .projectContentContainer {
+    max-width: 100%;
+  }
+
+  .projectImageContainer {
+    padding: var(--space-2xl);
+  }
+
+  .projectVideoMedia {
+    max-width: 100%;
+  }
+
+  .projectPhotoMedia {
+    max-width: 150px;
+  }
+
+  .universityDetails {
+    flex-direction: column;
+    gap: var(--space-sm);
+  }
+}
+
+/* Mobile (480px and below) */
+@media (max-width: 480px) {
+  .headShotImage {
+    width: 80px;
+    margin-top: var(--space-2xl);
+  }
+
+  .subNav {
+    margin-top: var(--space-2xl);
+  }
+
+  .subNavTitles {
+    width: 70px;
+    font-size: 0.75rem;
+  }
+
+  .subTabContainer {
+    margin-top: var(--space-2xl);
+  }
+
+  .projectContentContainer {
+    margin: var(--space-xl);
+  }
+
+  .projectName {
+    margin-top: var(--space-xl);
+    font-size: var(--text-lg);
+  }
+
+  .projectDesc {
+    margin-top: var(--space-xl);
+  }
+
+  .visitLinkText {
+    margin-top: var(--space-xl);
+  }
+
+  .sectionTitle {
+    font-size: var(--text-xl);
+  }
+
+  .educationSection {
+    margin-top: var(--space-2xl);
+  }
+
+  .educationContainer {
+    margin-top: var(--space-2xl);
+  }
+
+  .connectOuterContainer {
+    margin-top: var(--space-2xl);
+  }
+}
