@@ -162,14 +162,20 @@ export const connect = [
   },
   {
     id: 3,
-    name: "github",
+    name: "Github",
     link: "https://github.com/mattycakes14",
     icon: github,
   },
   {
     id: 4,
-    name: "twitter",
+    name: "Twitter",
     link: "https://x.com/realmattlau14",
     icon: x,
+  },
+  {
+    id: 5,
+    name: "Resume",
+    link: "/Matt_Lau_Feb_2026_Res.pdf",
+    icon: resumeIcon,
   },
 ];
