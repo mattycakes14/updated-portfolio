@@ -120,7 +120,7 @@ export const education = {
         "Led development of a React Native mobile app serving 500+ UW students. Conducted user research to identify key decision factors (dietary restrictions, cuisine preferences, group dynamics) and built a Tinder-style swipe interface for restaurant discovery. Integrated Yelp API with dynamic query construction based on user preferences, implemented CRUD operations for favorites, and collaborated with designers on technical constraints and UI iterations.",
     },
     {
-      name: "Full-Stack Engineer & Webmaster @ UDSM",
+      name: "Full-Stack Engineer & Webmaster @ UW Medicine",
       description:
         "Architecting two integrated systems for UW Medicine's student-ran organization (supporting 300+ people annually): (1) a public-facing web application with CMS features for blog posts, events showcase, and leadership applications, and (2) an internal volunteer operations platform handling authentication, event signups across 6 weekly sites, automated metrics tracking (service hours, patients served), and biannual report generation. Building end-to-end with Next.js, PostgreSQL, and Supabase while collaborating with medical leadership to replace their legacy WeJoin system.",
     },
