@@ -10,8 +10,19 @@ import x from "../assets/x.png";
 import cladMedia from "../assets/clad_media.png";
 import eatMedia from "../assets/eat_media.png";
 import impactMedia from "../assets/impact_media.png";
+import northwest from "../assets/northwest.png";
+import northwestMedia from "../assets/northwest-media.png";
 
 export const experiences = [
+  {
+    id: 0,
+    projectName: "UW School of Medicine",
+    projectDescription:
+      "Platform to connect healthcare students to volunteer opportunities and projects. Working with stakeholders to add new program filters, reposition search components, integrating new sign up features, and modifying website content",
+    externalLink: "https://nwhealthcareerpath.uw.edu/",
+    icon: northwest,
+    media: northwestMedia,
+  },
   {
     id: 1,
     projectName: "Clad Labs (YC F25)",
@@ -112,6 +123,8 @@ export const education = {
     "Linear Algebra",
     "Multivariable Calculus",
     "Probability & Computational Complexity",
+    "Machine Learning",
+    "Systems Programming",
   ],
   activities: [
     {
@@ -175,7 +188,7 @@ export const connect = [
   {
     id: 5,
     name: "Resume",
-    link: "/Matt_Lau_Feb_2026_Res.pdf",
+    link: "/Matt_Lau_April_Res.pdf",
     icon: resumeIcon,
   },
 ];

@@ -201,11 +201,14 @@ h1 {
   margin-right: var(--space-2xl);
 }
 
+.horizontalIcon {
+  width: 5rem;
+}
+
 .projectImage {
-  width: 35px;
-  aspect-ratio: 1 / 1;
-  object-fit: cover;
-  object-position: top;
+  width: 3rem;
+  height: 3rem;
+  object-fit: contain;
   box-shadow: 0px 1px 3px 0px black;
 }
 
@@ -220,15 +223,19 @@ h1 {
   width: 100%;
   object-fit: contain;
   border-radius: 10px;
-  box-shadow: 4px 6px 0px 0px rgba(0, 0, 0, 0.8),
-              8px 12px 0px 0px rgba(0, 0, 0, 0.4);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow:
+    4px 6px 0px 0px rgba(0, 0, 0, 0.8),
+    8px 12px 0px 0px rgba(0, 0, 0, 0.4);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .projectPhotoMedia:hover {
   transform: translate(-2px, -3px);
-  box-shadow: 6px 9px 0px 0px rgba(0, 0, 0, 0.8),
-              12px 16px 0px 0px rgba(0, 0, 0, 0.4);
+  box-shadow:
+    6px 9px 0px 0px rgba(0, 0, 0, 0.8),
+    12px 16px 0px 0px rgba(0, 0, 0, 0.4);
 }
 
 /* Skills Section Tab*/
