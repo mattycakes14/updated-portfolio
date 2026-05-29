@@ -10,45 +10,48 @@ import x from "../assets/x.png";
 import cladMedia from "../assets/clad_media.png";
 import eatMedia from "../assets/eat_media.png";
 import impactMedia from "../assets/impact_media.png";
-import northwest from "../assets/northwest.png";
-import northwestMedia from "../assets/northwest-media.png";
-
+import uwmed from "../assets/uw_medicine.jpg";
+import uwmedmedia from "../assets/uw_medicine_media.png";
+import newclad from "../assets/newclad.jpg";
+import newclad_media from "../assets/newclad_media.png";
+import workday_logo from "../assets/workday_logo.jpg";
+import evisort_media from "../assets/evisort_media.png";
 export const experiences = [
   {
     id: 0,
-    projectName: "UW School of Medicine",
+    projectName: "Workday",
     projectDescription:
-      "Platform to connect healthcare students to volunteer opportunities and projects. Working with stakeholders to add new program filters, reposition search components, integrating new sign up features, and modifying website content",
-    externalLink: "https://nwhealthcareerpath.uw.edu/",
-    icon: northwest,
-    media: northwestMedia,
+      "Incoming Software Engineer Intern (Summer 2026) on the Evisort engineering team.",
+    externalLink: "https://www.workday.com/",
+    icon: workday_logo,
+    media: evisort_media,
   },
   {
     id: 1,
-    projectName: "Clad Labs (YC F25)",
+    projectName: "UW School of Medicine",
     projectDescription:
-      "YC-backed startup democratizing code generation tools for developers. Built backend systems for ad content processing and personalized recommendation pipelines using LangGraph and Supabase.",
-    externalLink: "https://www.cladlabs.ai/",
-    icon: clad,
-    media: cladMedia,
+      "Platform connecting healthcare students to volunteer opportunities within service-learning programs. Built role-based access control with backend endpoints to assign user roles (admin, lead, volunteer) and rewrote Firestore security rules to enforce per-role permissions. Implemented a reusable toast notification system for real-time feedback on actions like volunteer signups and event creation.",
+    externalLink: "https://servicelearning.washington.edu/",
+    icon: uwmed,
+    media: uwmedmedia,
   },
   {
     id: 2,
-    projectName: "Eat Together",
+    projectName: "Clad Labs (YC F25)",
     projectDescription:
-      "Student organization connecting UW students through shared meals. Developed a mobile app with restaurant discovery features, matching algorithms, and swipe-based UI serving 500+ users across 200+ meetups.",
-    externalLink: "https://www.eat-together.org/about",
-    icon: eatTogether,
-    media: eatMedia,
+      "YC-backed startup democratizing code generation tools for developers. Built backend proxies for injecting dev-tool advertisements into AI assistant chat interfaces and personalized recommendation pipelines using LangGraph and Supabase.",
+    externalLink: "https://www.cladlabs.ai/",
+    icon: newclad,
+    media: newclad_media,
   },
   {
     id: 3,
-    projectName: "Web Impact – iMuslims",
+    projectName: "Eat Together",
     projectDescription:
-      "RSO building web solutions for campus clubs and nonprofits. Created dynamic member showcase pages and integrated headless CMS for client content management using Next.js.",
-    externalLink: "https://imuslims.vercel.app/",
-    icon: webImpact,
-    media: impactMedia,
+      "On-campus social media platform connecting UW students through shared meals. Built the React Native frontend with a preference quiz and Tinder-style swipe interface for restaurant discovery, backed by Firebase for saved user selections. ",
+    externalLink: "https://www.eat-together.org/about",
+    icon: eatTogether,
+    media: eatMedia,
   },
 ];
 
@@ -128,14 +131,29 @@ export const education = {
   ],
   activities: [
     {
+      name: "Software Developer @ UW Medicine",
+      description:
+        "Shipped a toast notification system to give success/failure feedback for user actions (event creation, student signup, etc.), reducing user confusion by providing visible, descriptive success and error states. Rewrote Firestore security rules and developed backend endpoints for role assignment, enforcing role-specific database permissions for admins, leads, and volunteers across 100+ service programs.",
+    },
+    {
+      name: "UW Office of Rural Programs Website",
+      description:
+        "Leading the rebuild of the UW Medicine Office of Rural Programs website, replacing a WordPress site to improve information accessibility for medical students and preceptors across the WWAMI region (5 states, 7 programs).",
+    },
+    {
+      name: "University District Street Medicine",
+      description:
+        "Building a web platform for University District Street Medicine (UW Medicine funded organization), including About, Executive Board, and Membership pages to support volunteer recruitment and public engagement.",
+    },
+    {
+      name: "Northwest Health Career Path",
+      description:
+        "Contributing ongoing maintenance and feature development to the Northwest Health Career website, implementing program filters, UI refinements, and content updates to support healthcare career exploration for underrepresented students.",
+    },
+    {
       name: "Lead Developer @ Eat Together",
       description:
         "Led development of a React Native mobile app serving 500+ UW students. Conducted user research to identify key decision factors (dietary restrictions, cuisine preferences, group dynamics) and built a Tinder-style swipe interface for restaurant discovery. Integrated Yelp API with dynamic query construction based on user preferences, implemented CRUD operations for favorites, and collaborated with designers on technical constraints and UI iterations.",
-    },
-    {
-      name: "Full-Stack Engineer & Webmaster @ UW Medicine",
-      description:
-        "Architecting two integrated systems for UW Medicine's student-ran organization (supporting 300+ people annually): (1) a public-facing web application with CMS features for blog posts, events showcase, and leadership applications, and (2) an internal volunteer operations platform handling authentication, event signups across 6 weekly sites, automated metrics tracking (service hours, patients served), and biannual report generation. Building end-to-end with Next.js, PostgreSQL, and Supabase while collaborating with medical leadership to replace their legacy WeJoin system.",
     },
     {
       name: "Frontend Developer @ UW Web Impact",
@@ -188,7 +206,7 @@ export const connect = [
   {
     id: 5,
     name: "Resume",
-    link: "/Matt_Lau_April_Res.pdf",
+    link: "/Matt_Lau_Res_Fall_Recruitment.pdf",
     icon: resumeIcon,
   },
 ];
