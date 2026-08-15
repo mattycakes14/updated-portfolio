@@ -143,17 +143,15 @@ h1 {
 }
 .projectSectionTab {
   width: 100%;
-  min-height: 300px;
   margin-bottom: var(--space-2xl);
   border-radius: 10px;
   box-shadow: 0px 2px 10px 0px black; /* offset-x offset-y blur spread color*/
-  display: flex;
 }
 
 .projectContentContainer {
-  margin: var(--space-2xl);
+  padding: var(--space-2xl);
   width: 100%;
-  max-width: 350px;
+  box-sizing: border-box;
 }
 
 .projectName {
@@ -163,42 +161,33 @@ h1 {
   font-size: var(--text-xl);
 }
 
+.projectMeta {
+  margin-top: var(--space-sm);
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+  font-family: var(--font-primary);
+  font-size: var(--text-sm);
+  color: var(--color-muted);
+}
+
+.projectRole {
+  font-weight: var(--font-weight-regular);
+}
+
+.projectDates {
+  font-weight: var(--font-weight-regular);
+  white-space: nowrap;
+}
+
 .projectDesc {
   margin-top: var(--space-2xl);
   font-family: var(--font-primary);
   font-weight: var(--font-weight-regular);
   font-size: var(--text-base);
   color: var(--color-muted);
-}
-
-.projectLink {
-  text-decoration: none;
-  color: inherit;
-}
-
-.visitLinkText {
-  margin-top: var(--space-2xl);
-  font-family: var(--font-primary);
-  font-weight: var(--font-weight-bold);
-  font-size: var(--text-sm);
-  width: 65px;
-  height: 25px;
-  border: 2px solid var(--color-primary);
-  border-radius: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: transform 0.3s ease;
-}
-
-.visitLinkText:hover {
-  transform: translateY(-5px);
-}
-.projectImageContainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-right: var(--space-2xl);
 }
 
 .horizontalIcon {
@@ -211,30 +200,9 @@ h1 {
   object-fit: contain;
 }
 
-.projectVideoMedia {
-  max-width: 320px;
-  width: 100%;
-  aspect-ratio: 16 / 9;
-}
-
-.projectPhotoMedia {
-  max-width: 250px;
-  width: 100%;
-  object-fit: contain;
-  border-radius: 10px;
-  box-shadow:
-    4px 6px 0px 0px rgba(0, 0, 0, 0.8),
-    8px 12px 0px 0px rgba(0, 0, 0, 0.4);
-  transition:
-    transform 0.3s ease,
-    box-shadow 0.3s ease;
-}
-
-.projectPhotoMedia:hover {
-  transform: translate(-2px, -3px);
-  box-shadow:
-    6px 9px 0px 0px rgba(0, 0, 0, 0.8),
-    12px 16px 0px 0px rgba(0, 0, 0, 0.4);
+.amazonIcon {
+  width: 4rem;
+  height: 4rem;
 }
 
 /* Skills Section Tab*/
@@ -386,27 +354,6 @@ h1 {
     margin-top: var(--space-3xl);
   }
 
-  .projectSectionTab {
-    flex-direction: column;
-    min-height: auto;
-  }
-
-  .projectContentContainer {
-    max-width: 100%;
-  }
-
-  .projectImageContainer {
-    padding: var(--space-2xl);
-  }
-
-  .projectVideoMedia {
-    max-width: 100%;
-  }
-
-  .projectPhotoMedia {
-    max-width: 150px;
-  }
-
   .universityDetails {
     flex-direction: column;
     gap: var(--space-sm);
@@ -434,7 +381,7 @@ h1 {
   }
 
   .projectContentContainer {
-    margin: var(--space-xl);
+    padding: var(--space-xl);
   }
 
   .projectName {
@@ -443,10 +390,6 @@ h1 {
   }
 
   .projectDesc {
-    margin-top: var(--space-xl);
-  }
-
-  .visitLinkText {
     margin-top: var(--space-xl);
   }
 

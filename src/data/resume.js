@@ -3,55 +3,44 @@ import emailIcon from "../assets/email.png";
 import resumeIcon from "../assets/resume.png";
 import linkedInIcon from "../assets/linked.png";
 import github from "../assets/github.png";
-import clad from "../assets/clad.jpg";
-import eatTogether from "../assets/eat_together.jpg";
-import webImpact from "../assets/web_impact.jpg";
 import x from "../assets/x.png";
-import cladMedia from "../assets/clad_media.png";
-import eatMedia from "../assets/eat_media.png";
-import impactMedia from "../assets/impact_media.png";
-import uwmed from "../assets/uw_medicine.jpg";
-import uwmedmedia from "../assets/uw_medicine_media.png";
 import newclad from "../assets/newclad.jpg";
-import newclad_media from "../assets/newclad_media.png";
 import workday_logo from "../assets/workday_logo.jpg";
-import evisort_media from "../assets/evisort_media.png";
+import amazonLogo from "../assets/amazon.webp";
 export const experiences = [
   {
     id: 0,
-    projectName: "Workday",
+    projectName: "Amazon",
+    role: "Software Engineer Intern – Aurora RDS",
+    location: "Palo Alto, CA",
+    startDate: "Sep 2026",
+    endDate: "Dec 2026",
     projectDescription:
-      "Incoming Software Engineer Intern (Summer 2026) on the Evisort engineering team.",
-    externalLink: "https://www.workday.com/",
-    icon: workday_logo,
-    media: evisort_media,
+      "Incoming intern on the Distributed Databases team, working on Amazon Aurora.",
+    icon: amazonLogo,
+    iconClassName: "amazonIcon",
   },
   {
     id: 1,
-    projectName: "UW School of Medicine",
+    projectName: "Workday",
+    role: "Software Engineer Intern – Platform/DevOps",
+    location: "Pleasanton, CA",
+    startDate: "Jun 2026",
+    endDate: "Sep 2026",
     projectDescription:
-      "Platform connecting healthcare students to volunteer opportunities within service-learning programs. Built role-based access control with backend endpoints to assign user roles (admin, lead, volunteer) and rewrote Firestore security rules to enforce per-role permissions. Implemented a reusable toast notification system for real-time feedback on actions like volunteer signups and event creation.",
-    externalLink: "https://servicelearning.washington.edu/",
-    icon: uwmed,
-    media: uwmedmedia,
+      "Software Engineer Intern on Workday's Evisort org, focused on infrastructure reliability and cost optimization. Cleaned up monitoring and logging infrastructure, moved compute workloads to a lower-cost architecture, and standardized how services across the org manage cloud configuration. Also represented the team as a Top 5 finalist in Workday's company-wide intern hackathon.",
+    icon: workday_logo,
   },
   {
     id: 2,
     projectName: "Clad Labs (YC F25)",
+    role: "Software Engineer Intern – AI Tools",
+    location: "San Francisco, CA",
+    startDate: "Jun 2025",
+    endDate: "Sep 2025",
     projectDescription:
-      "YC-backed startup democratizing code generation tools for developers. Built backend proxies for injecting dev-tool advertisements into AI assistant chat interfaces and personalized recommendation pipelines using LangGraph and Supabase.",
-    externalLink: "https://www.cladlabs.ai/",
+      "Software Engineer Intern at this YC-backed startup, building AI-powered tooling that helps developers discover relevant tools right inside their coding workflow — spanning content extraction, semantic search, and the recommendation experience itself.",
     icon: newclad,
-    media: newclad_media,
-  },
-  {
-    id: 3,
-    projectName: "Eat Together",
-    projectDescription:
-      "On-campus social media platform connecting UW students through shared meals. Built the React Native frontend with a preference quiz and Tinder-style swipe interface for restaurant discovery, backed by Firebase for saved user selections. ",
-    externalLink: "https://www.eat-together.org/about",
-    icon: eatTogether,
-    media: eatMedia,
   },
 ];
 
@@ -67,7 +56,8 @@ export const skills = [
       "CSS",
       "SQL",
       "Go",
-      "Swift",
+      "C",
+      "C++",
     ],
   },
   {
@@ -80,17 +70,11 @@ export const skills = [
       "FastAPI",
       "Node.js",
       "Express.js",
-      "Selenium",
-      "Expo Go",
       "Tailwind",
-      "BeautifulSoup",
       "LangChain",
       "NumPy",
       "TensorFlow",
       "PyTorch",
-      "Transformers",
-      "HuggingFace",
-      "FAISS",
     ],
   },
   {
@@ -102,11 +86,14 @@ export const skills = [
       "Qdrant",
       "Pinecone",
       "Docker",
+      "Gunicorn",
+      "SQLAlchemy",
       "Alembic",
+      "AWS (EC2, Auto Scaling Groups, EKS, Lambdas, CloudWatch)",
+      "Kubernetes",
+      "Terraform",
       "Git",
-      "Postman",
-      "Figma",
-      "AWS (S3, EC2)",
+      "GitHub Actions",
     ],
   },
 ];
@@ -134,11 +121,6 @@ export const education = {
       name: "Software Developer @ UW Medicine",
       description:
         "Shipped a toast notification system to give success/failure feedback for user actions (event creation, student signup, etc.), reducing user confusion by providing visible, descriptive success and error states. Rewrote Firestore security rules and developed backend endpoints for role assignment, enforcing role-specific database permissions for admins, leads, and volunteers across 100+ service programs.",
-    },
-    {
-      name: "UW Office of Rural Programs Website",
-      description:
-        "Leading the rebuild of the UW Medicine Office of Rural Programs website, replacing a WordPress site to improve information accessibility for medical students and preceptors across the WWAMI region (5 states, 7 programs).",
     },
     {
       name: "University District Street Medicine",
@@ -206,7 +188,7 @@ export const connect = [
   {
     id: 5,
     name: "Resume",
-    link: "/Matt_Lau_Res_Fall_Recruitment.pdf",
+    link: "/Matt_Lau_Recruitment_V2.pdf",
     icon: resumeIcon,
   },
 ];

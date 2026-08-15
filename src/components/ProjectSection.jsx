@@ -8,10 +8,13 @@ const ProjectSection = () => {
         <ProjectSectionTab
           key={exp.id}
           name={exp.projectName}
+          role={exp.role}
+          location={exp.location}
+          startDate={exp.startDate}
+          endDate={exp.endDate}
           desc={exp.projectDescription}
-          link={exp.externalLink}
           icon={exp.icon}
-          media={exp.media}
+          iconClassName={exp.iconClassName}
         />
       ))}
     </div>

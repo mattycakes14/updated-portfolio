@@ -1,27 +1,34 @@
 import "../App.css";
 
-const ProjectSectionTab = ({ name, desc, link, icon, media }) => {
-  const isVideo = media && /\.(mp4|mov|webm|ogg)$/i.test(media);
-
+const ProjectSectionTab = ({
+  name,
+  role,
+  location,
+  startDate,
+  endDate,
+  desc,
+  icon,
+  iconClassName,
+}) => {
   return (
     <div className="projectSectionTab">
       <div className="projectContentContainer">
-        <img src={icon} alt="small image" className="projectImage"></img>
+        <img
+          src={icon}
+          alt="small image"
+          className={`projectImage ${iconClassName || ""}`}
+        ></img>
         <div className="projectName">{name}</div>
+        <div className="projectMeta">
+          <span className="projectRole">
+            {role}
+            {location ? ` · ${location}` : ""}
+          </span>
+          <span className="projectDates">
+            {startDate} – {endDate}
+          </span>
+        </div>
         <div className="projectDesc">{desc}</div>
-
-        <a className="projectLink" href={link} target="_blank">
-          <div className="visitLinkText">Visit site</div>
-        </a>
-      </div>
-      <div className="projectImageContainer">
-        {isVideo ? (
-          <video className="projectVideoMedia" autoPlay muted loop playsInline>
-            <source src={media} type="video/mp4" />
-          </video>
-        ) : (
-          <img src={media} alt="project media" className="projectPhotoMedia" />
-        )}
       </div>
     </div>
   );

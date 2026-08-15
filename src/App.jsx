@@ -13,9 +13,9 @@ import { useState } from "react";
 function App() {
   const [activeTab, setActiveTab] = useState("Experience");
 
-  const heading = "Hey, I'm Matthew Lau";
+  const heading = "Hey, I'm Matt Lau";
   const description =
-    "I'm a CS student from the University of Washington focused on building full-stack applications and AI-driven systems!";
+    "I'm a CS student from the University of Washington with a background in distributed systems, cloud infrastructure, and full-stack development";
 
   const subNav = ["Experience", "Skills", "Education", "Connect"];
 
