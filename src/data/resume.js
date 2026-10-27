@@ -11,12 +11,12 @@ export const experiences = [
   {
     id: 0,
     projectName: "Amazon",
-    role: "Software Engineer Intern – Aurora RDS",
+    role: "Software Engineer Intern – Distributed Databases (Aurora)",
     location: "Palo Alto, CA",
     startDate: "Sep 2026",
     endDate: "Dec 2026",
     projectDescription:
-      "Incoming intern on the Distributed Databases team, working on Amazon Aurora.",
+      "Software Engineer Intern on the Distributed Databases team, working on Amazon Aurora Global Database. Fixed inaccurate writer-downtime metrics for switchovers by designing a DynamoDB-backed approach to pair control-plane events exactly across Java/Spring services, after benchmarking multiple designs in pre-production to pick a race-free solution.",
     icon: amazonLogo,
     iconClassName: "amazonIcon",
   },
@@ -75,11 +75,13 @@ export const skills = [
       "NumPy",
       "TensorFlow",
       "PyTorch",
+      "Spring",
     ],
   },
   {
     category: "Databases & Tools",
     items: [
+      "DynamoDB",
       "Firebase",
       "Supabase",
       "Redis",
@@ -89,7 +91,7 @@ export const skills = [
       "Gunicorn",
       "SQLAlchemy",
       "Alembic",
-      "AWS (EC2, Auto Scaling Groups, EKS, Lambdas, CloudWatch)",
+      "AWS (EC2, Auto Scaling Groups, EKS, Lambdas, CloudWatch, Kafka, SNS)",
       "Kubernetes",
       "Terraform",
       "Git",
@@ -102,8 +104,8 @@ export const education = {
   university: {
     name: "University of Washington, Paul G. Allen School",
     degree: "Bachelor of Science: Computer Science",
-    graduation: "Expected June 2027",
-    gpa: "3.96/4.0",
+    graduation: "Expected June 2028",
+    gpa: "3.71/4.0",
     blurb: "Dean's List",
   },
   coursework: [
@@ -118,9 +120,9 @@ export const education = {
   ],
   activities: [
     {
-      name: "Software Developer @ UW Medicine",
+      name: "Software Engineer (Full Stack) @ UW Medicine",
       description:
-        "Shipped a toast notification system to give success/failure feedback for user actions (event creation, student signup, etc.), reducing user confusion by providing visible, descriptive success and error states. Rewrote Firestore security rules and developed backend endpoints for role assignment, enforcing role-specific database permissions for admins, leads, and volunteers across 100+ service programs.",
+        "Rewrote Firestore security rules and built Next.js API routes for role assignment, enforcing role-specific database permissions for admins, leads, and volunteers across 100+ service programs. Restructured event scheduling data into per-slot subcollections so security rules could validate volunteer signups at document granularity, and built a Dockerized Firestore emulator test suite covering admin/lead/volunteer auth contexts.",
     },
     {
       name: "University District Street Medicine",
@@ -188,7 +190,7 @@ export const connect = [
   {
     id: 5,
     name: "Resume",
-    link: "/Matt_Lau_Recruitment_V2.pdf",
+    link: "/Matt_Lau_Recruitment_V9.pdf",
     icon: resumeIcon,
   },
 ];
